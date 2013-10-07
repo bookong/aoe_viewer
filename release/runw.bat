@@ -1,0 +1,1 @@
+start "Aoe Viewer" "javaw" -Xmx128M -cp %cd% -Djava.ext.dirs="%cd%;%cd%\lib" -jar %cd%\aoe_viewer.jar %*

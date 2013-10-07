@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>net.bookong.game</groupId>
+	<artifactId>aoe_viewer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<name>aoe_viewer</name>
+	<description></description>
+   
+   <properties>
+   		<main-class>net.bookong.game.aoeviewer.MainFrame</main-class>
+		<java-version>1.6</java-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<slf4j-version>1.7.5</slf4j-version>
+	</properties>
+
+	<dependencies>
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.bookong.tools</groupId>
+			<artifactId>game_archive</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>${main-class}</mainClass>
+						</manifest>
+					</archive>
+					<excludes>
+						<exclude>**/log4j.*</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
