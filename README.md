@@ -11,6 +11,6 @@ aoe_viewer
 
 执行 runw.bat 运行程序。
 
-![Test XIB](https://raw.github.com/faceleg/bookong/aoe_viewer/blob/master/sample1.png)
+![sample1.png](sample1.png)
 
-![Test XIB](https://raw.github.com/faceleg/bookong/aoe_viewer/blob/master/sample2.png)
+![sample2.png](sample2.png)
