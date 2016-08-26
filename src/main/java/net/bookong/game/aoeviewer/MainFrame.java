@@ -267,9 +267,8 @@ public class MainFrame extends JFrame {
 		txtHexDump.setFont(new Font("宋体", Font.PLAIN, 14));
 		txtHexDump.setEditable(false);
 		
-		String currPath = new JarUtil(JarUtil.class).getJarPath() + File.separatorChar;
-		loadPalette(currPath + "Aoe2Palette.pal");
-		loadFileNames(currPath + "Aoe2ListFile.txt");
+		loadPalette(MainFrame.class.getResource("/Aoe2Palette.pal").getPath());
+		loadFileNames(MainFrame.class.getResource("/Aoe2ListFile.txt").getPath());
 	}
 	
 	private void flushStateBar(){
