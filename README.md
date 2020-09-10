@@ -11,7 +11,7 @@ aoe_viewer
 
 执行 runw.bat 运行程序。
 
-![sample1.png](sample1.png)
+![sample1.png](http://bookong.github.io/aoe_viewer/sample1.png)
 
-![sample2.png](sample2.png)
+![sample2.png](http://bookong.github.io/aoe_viewer/sample2.png)
 
